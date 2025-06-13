@@ -31,22 +31,23 @@ export default function About() {
           <p className="animate-terminal delay-[0.2s]"><span className="text-green-300">$</span> whoami</p>
 
           
-        <div className="w-full px-2 sm:px-0">
-  <p className="animate-terminal delay-[0.4s] text-[10px] sm:text-sm leading-tight whitespace-normal break-words break-all">
-    {/* Line 1: hi I'm */}
-    <span className="block sm:inline">hi I'm</span>
-    
-    {/* Line 2: Name */}
-    <span className="block sm:inline font-semibold text-green-200">
-      Madan Chinthapally
-    </span>
+              <div className="w-full px-2 sm:px-0">
+                    {/* Wrapper for vertical on mobile, horizontal on desktop */}
+                    <div className="flex flex-col text-[10px] sm:text-sm leading-tight text-green-400 animate-terminal delay-[0.4s]">
+                      
+                      {/* Line 1: hi I'm Madan Chinthapally */}
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-x-1">
+                        <span>hi I'm</span>
+                        <span className="font-semibold text-green-200">Madan Chinthapally</span>
+                      </div>
+                  
+                      {/* Line 2: Roles */}
+                      <span className="mt-1 sm:mt-0">
+                        — Cybersecurity Graduate | Cybersecurity Analyst | Threat Hunter
+                      </span>
+                    </div>
+                  </div>
 
-    {/* Line 3: Title */}
-    <span className="block sm:inline">
-      — Cybersecurity Graduate | Cybersecurity Analyst | Threat Hunter
-    </span>
-  </p>
-</div>
 
 
 
