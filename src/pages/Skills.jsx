@@ -46,8 +46,7 @@ export default function Skills() {
               <h2 className="text-xl font-semibold text-blue-300 mb-4">{category}</h2>
               <div className="flex flex-wrap gap-5">
                 {items.map((item, idx) => (
-                // const imagePath = `/skills/${item.toLowerCase().replace(/ /g, '-')}.png`;
-                //   console.log(`Image path for "${item}":`, imagePath); // Debug log
+             
                   <div
                     key={idx}
                     className="w-16 h-16 hover:scale-110 transition-transform"
