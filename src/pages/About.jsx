@@ -29,7 +29,11 @@ export default function About() {
           data-aos="fade-left"
         >
           <p className="animate-terminal delay-[0.2s]"><span className="text-green-300">$</span> whoami</p>
-          <p className="animate-terminal delay-[0.4s]">Madan Chinthapally — Cybersecurity Graduate | Cybersecurity Analyst | Threat Hunter</p>
+          <p className="animate-terminal delay-[0.4s]">
+            <span className="block text-lg sm:text-xl md:text-2xl font-semibold text-green-200">
+    Madan Chinthapally
+  </span>
+             — Cybersecurity Graduate | Cybersecurity Analyst | Threat Hunter</p>
 
           <p className="animate-terminal delay-[0.6s]"><span className="text-green-300">$</span> cat profile.txt</p>
           <p className="animate-terminal delay-[0.8s]">
