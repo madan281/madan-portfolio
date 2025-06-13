@@ -46,7 +46,7 @@ export default function Skills() {
               <h2 className="text-xl font-semibold text-blue-300 mb-4">{category}</h2>
               <div className="flex flex-wrap gap-5">
                 {items.map((item, idx) => (
-                const imagePath = `/skills/${item.toLowerCase().replace(/ /g, '-')}.png`;
+                // const imagePath = `/skills/${item.toLowerCase().replace(/ /g, '-')}.png`;
                 //   console.log(`Image path for "${item}":`, imagePath); // Debug log
                   <div
                     key={idx}
@@ -59,7 +59,7 @@ export default function Skills() {
                       src={`/skills/${item.toLowerCase().replace(/ /g, '-')}.png`}
                       alt={item}
                       className="w-full h-full object-contain"
-                       onError={() => console.warn(`Image not found: ${imagePath}`)}
+                      
                     />
                   </div>
                 ))}
