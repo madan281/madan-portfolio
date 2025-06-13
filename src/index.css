@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* src/index.css */
+.hexagon {
+  clip-path: polygon(
+    25% 6%, 75% 6%, 100% 50%,
+    75% 94%, 25% 94%, 0% 50%
+  );
+}
+.cyber-bg {
+  background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #0f0c29);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+.nav-item {
+  @apply relative text-white font-medium px-2 py-1;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #60a5fa; /* Tailwind blue-400 */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1);
+}
+
+.active-nav {
+  @apply text-blue-400;
+}
+
+.active-nav::after {
+  transform: scaleX(1);
+  box-shadow: 0 0 4px #60a5fa, 0 0 8px #60a5fa;
 }
