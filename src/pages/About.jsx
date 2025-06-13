@@ -32,16 +32,22 @@ export default function About() {
 
           
         <div className="w-full px-2 sm:px-0">
-            <p className="animate-terminal delay-[0.4s] text-[10px] sm:text-sm leading-tight whitespace-normal break-words break-all">
-              <span className="block sm:inline">hi I'm</span>
-              <span className="block sm:inline font-semibold text-green-200">
-                Madan Chinthapally
-              </span>
-              <span className="block sm:inline">
-                — Cybersecurity Graduate | Cybersecurity Analyst | Threat Hunter
-              </span>
-            </p>
-          </div>
+  <p className="animate-terminal delay-[0.4s] text-[10px] sm:text-sm leading-tight whitespace-normal break-words break-all">
+    {/* Line 1: hi I'm */}
+    <span className="block sm:inline">hi I'm</span>
+    
+    {/* Line 2: Name */}
+    <span className="block sm:inline font-semibold text-green-200">
+      Madan Chinthapally
+    </span>
+
+    {/* Line 3: Title */}
+    <span className="block sm:inline">
+      — Cybersecurity Graduate | Cybersecurity Analyst | Threat Hunter
+    </span>
+  </p>
+</div>
+
 
 
 
