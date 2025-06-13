@@ -29,14 +29,17 @@ export default function About() {
           data-aos="fade-left"
         >
           <p className="animate-terminal delay-[0.2s]"><span className="text-green-300">$</span> whoami</p>
-         <p className="animate-terminal delay-[0.4s] text-xs sm:text-sm">
-              <span className="block sm:inline font-semibold text-green-200">
-                Madan Chinthapally
-              </span>
-              <span className="block sm:inline">
-                &nbsp;— Cybersecurity Graduate | Cybersecurity Analyst | Threat Hunter
-              </span>
-            </p>
+        <div className="w-full overflow-x-auto px-2 sm:px-0">
+  <p className="animate-terminal delay-[0.4s] text-xs sm:text-sm break-words">
+    <span className="block sm:inline font-semibold text-green-200">
+      Madan Chinthapally
+    </span>
+    <span className="block sm:inline">
+      &nbsp;— Cybersecurity Graduate | Cybersecurity Analyst | Threat Hunter
+    </span>
+  </p>
+</div>
+
 
 
 
