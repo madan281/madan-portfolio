@@ -32,7 +32,7 @@ export default function About() {
 
           
         <div className="w-full px-2 sm:px-0">
-          <p className="animate-terminal delay-[0.4s] text-[10px] sm:text-sm leading-tight whitespace-normal break-words break-all">
+          <p className="animate-terminal delay-[0.4s] text-[8px] sm:text-sm leading-tight whitespace-normal break-words break-all">
             <span className="block font-semibold text-green-200">
               Madan Chinthapally
             </span>
