@@ -47,7 +47,7 @@ export default function Skills() {
               <div className="flex flex-wrap gap-5">
                 {items.map((item, idx) => (
                 const imagePath = `/skills/${item.toLowerCase().replace(/ /g, '-')}.png`;
-                  console.log(`Image path for "${item}":`, imagePath); // Debug log
+                //   console.log(`Image path for "${item}":`, imagePath); // Debug log
                   <div
                     key={idx}
                     className="w-16 h-16 hover:scale-110 transition-transform"
@@ -59,6 +59,7 @@ export default function Skills() {
                       src={`/skills/${item.toLowerCase().replace(/ /g, '-')}.png`}
                       alt={item}
                       className="w-full h-full object-contain"
+                       onError={() => console.warn(`Image not found: ${imagePath}`)}
                     />
                   </div>
                 ))}
